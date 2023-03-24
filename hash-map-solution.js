@@ -8,9 +8,9 @@ function isUnique(sampleString) {
     // We first iterate through the sample string: 
     for (let i = 0; i < sampleString.length; i++) {
         // If the current character is not in the hash map... 
-        if (!hashMap[`${sampleString[i]}`]) {
+        if (!hashMap[sampleString[i]]) {
             // We record its presence
-            hashMap[`${sampleString[i]}`] = 1
+            hashMap[sampleString[i]] = 1
         
         // However, if we come across a character that has already been recorded in the hash map...
         } else {
